@@ -1,0 +1,17 @@
+body{
+	background-color: gray;
+	font-family:Times New Roman;
+}
+img.img{
+	width:200;
+	height:200;
+}
+h2,h1{
+	color:lime;
+	font-family: "Lucida Sans Unicode", Helvetica, Arial,sans-serif;
+	font-style: normal;
+
+}
+p.aboutme{
+	border-bottom: 3px ridge white;
+}
