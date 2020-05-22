@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image:url("../img/background.png");
+	 font:8pt Verdana,Tahoma,sans-serif;
+}
+div.topbanner{
+	background-image:url("../img/bannerbg.png");
+	background-repeat:repeat-x;
+	text-align:center;
+}
+h1.movie{
+	font:24pt Tahoma,Verdana,sans-serif;
+	text-align:center;
+	text-shadow:3px 3px #999999
+}
+div.mainpage{
+	
+	position: relative;
+	max-width:800px;
+	margin:auto;
+	border:4px solid gray;
+	border-radius:20px;
+	
+}
+div.checkers{
+	position:fixed;
+	bottom:0;
+	right:0;
+}
+div.leftside{
+	position:absolute;
+	right:0;
+	width: 250px;
+	background-color: #A2B964;
+	font:normal 8pt Arial, serif;
+	/* padding: 10px; */
+	/* margin: 10px; */
+	border-radius:10px;
+	/* border:solid gray;  */
+	
+}
+ div.rigtside{
+	
+	position: relative;
+	width: 550px;
+	
+	 /* border:solid gray;  */
+	 
+/* 	 column-count: 2; 
+	 margin:auto;
+	 column-gap: 35px; */
+} 
+
+img.rotten{
+	position: relative;
+	vertical-align: middle;
+	height: 83px;
+	width: 550;
+	
+}
+div.rotten{
+	background-image:url("../img/rbg.png");
+	background-repeat:repeat-x;
+	background-size: 83px;
+	border-radius: 10px;
+	font:normal bold 48pt Georgia, serif;
+	color:red;
+	width: 550px;
+	
+}
+p.Review{
+	border:2px solid gray;
+	border-radius:20px;
+	background-color:#E8DC9B;
+	font:normal bold 8pt Georgia, serif;
+	width: 275px;
+	margin: 5px;
+	padding: 5px;
+}
+img.image{
+	float: left;
+}
+/* div.Review{
+	column-count: 2;
+	
+	width: 550px;
+
+} */
+/* div.checkers{
+	position:fixed;
+	bottom:0;
+	right:0;
+}
+div.mainpage{
+	position: relative;	
+	margin:auto;
+	max-width:800px;
+	border:4px solid gray;
+	text-align:center;
+	border-radius:20px;
+}
+
+p.dich{
+	border:2px solid gray;
+	border-radius:20px;
+	background-color:#E8DC9B;
+	font:normal bold 8pt Georgia, serif;
+	
+
+	width:38.5%;
+}
+p.comm{
+	vertical-align: text-top;
+	font:italic bold 8pt Georgia, serif;
+
+	text-align:left;
+	width:38.5%;
+	
+	border:4px solid gray;
+}
+div.leftside{
+	position: absolute;
+	right: 0;
+	width:33%;
+	text-align:left;
+	background-color:yellow;
+
+}
+div.rotten{
+	
+	background-image:url("../img/rbg.png");
+	background-repeat:repeat-x;
+	border-radius:20px;
+	text-align:left;
+	font:normal bold 24pt Georgia, serif;
+	color:red;
+	
+}
+ div.review{
+	position: absolute;
+	left: 0;
+	display: inline;
+}
+div.topp{
+	position: relative;
+	
+	width: 77%;
+} */
