@@ -45,7 +45,7 @@ div.leftside{
 }
  div.rigtside{
 	
-	position: relative;
+	position: absolute;
 	width: 550px;
 	
 	 /* border:solid gray;  */
@@ -77,12 +77,29 @@ p.Review{
 	border-radius:20px;
 	background-color:#E8DC9B;
 	font:normal bold 8pt Georgia, serif;
-	width: 275px;
+	width: 250px;
 	margin: 5px;
 	padding: 5px;
 }
 img.image{
 	float: left;
+}
+div.col1{
+	position:absolute;
+	left:0px;
+	top:10px;
+	width: 270px;
+}
+div.col2{
+	position:absolute;
+	left:280px;
+	top:10px;
+	width: 270px;
+}
+p.bottom{
+	position:absolute;
+	
+	top:650px;
 }
 /* div.Review{
 	column-count: 2;
