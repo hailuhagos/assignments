@@ -1,0 +1,33 @@
+h1{
+	background-color:#330000;
+	color:white;
+	text-align:center;
+	width:50%;
+	margin:auto;
+}
+div{
+	position:relative;
+	width:50%;
+	background-color: #ffe6e6;
+	margin:auto;
+}
+img{
+	width:40px;
+	height:30px;
+	vertical-align: middle;
+}
+#back{
+	width:150px;
+	height:60px;
+}
+a{
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+#submit{
+	position:absolute;
+	bottom:0;
+	right:50%;
+	background:green;
+}
