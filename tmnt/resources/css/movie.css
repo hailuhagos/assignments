@@ -1,12 +1,12 @@
 body{
 	background-image:url("../img/background.png");
-	 font:8pt Verdana,Tahoma,sans-serif;
+	font:8pt Verdana,Tahoma,sans-serif;
+	margin:0;	
 }
 div.topbanner{
 	background-image:url("../img/bannerbg.png");
 	background-repeat:repeat-x;
 	text-align:center;
-	
 }
 #banner{
 	height:50px;
