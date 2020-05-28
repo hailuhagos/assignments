@@ -1,0 +1,35 @@
+body{
+    background-color: #CCCCFF;
+    font-size: 14pt;
+    font-weight: bold;
+}
+h1{
+    font-size: 32pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+#animateArea{
+    display: block;
+    width: 90%;
+    height: 400px;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: monospace;
+    margin: auto;
+}
+#controls{
+    text-align: center;
+  
+}
+
+fieldset{
+    display: inline;
+    border-color: black;
+    border-width: 5px;
+}
+div.checker{
+    position: absolute;
+    right:0;
+    bottom: 0;
+}

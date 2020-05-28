@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>CSE 190 M ASCII Animation Viewer</title>
+        <link href="ascii.css" type="text/css" rel="stylesheet">
+        <script src="ascii.js"></script>
+        <script src="animations.js"></script>
+	</head>
+	<body>
+        <h1>CSE 190 M ASCII Animation Viewer</h1>
+        <textarea id="animateArea" cols="80" rows="20"></textarea><br>
+       <div id="controls">
+        <fieldset>
+            <legend>Play Controls:</legend>
+            <button id="start">Start</button>
+            <!-- id="stop" -->
+            <button id="stop">Stop</button>
+        </fieldset>
+        <fieldset id="fsAnimation">
+            <legend>Animation:</legend>
+            <select name="selectType" id="animType">
+                <option>Blank</option>
+                <option>Exercise</option>
+                <option>Juggler</option>
+                <option>Bike</option>
+                <option>Dive</option>
+                <option>Custom</option>
+            </select>
+        </fieldset>
+        <fieldset id="fsSize">
+            <legend>Size:</legend>
+            <select id="size">
+                <option value="7pt">Tiny</option>
+                <option value="10pt">Small</option>
+                <option value="12pt" selected>Medium</option>
+                <option value="16pt">Large</option>
+                <option value="24pt">Extra Large</option>
+                <option value="32pt">XXL</option>
+            </select>
+        </fieldset>
+        <fieldset id="fsSpeed">
+            <legend>Speed:</legend>
+            <label for="turbo">Turbo</label>
+            <input type="checkbox" id="turbo">
+        </fieldset>
+        </div>
+        <div class="checker">
+            <a href="https://validator.w3.org/check/referer">
+				<img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="Validate" />
+			</a><br>
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt="Valid CSS!" />
+			</a>
+         </div>
+    </body>
+</html>
