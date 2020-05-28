@@ -1,7 +1,7 @@
 // "use strict";
 var timerID;
 var i=0;
-var speed =250;
+var speed;
 var animationStr;
 var textObj;
 var animationStr;
@@ -38,11 +38,11 @@ function animat(){
     animationStr = document.getElementById("animateArea").value;
     textObj = document.getElementById("animateArea");
     animationStr = animationStr.split("=====\n");
-
     var startObj = document.getElementById("start");
     var animObj = document.getElementById("animType");
     startObj.disabled = true;
     animObj.disabled = true;
+    speed=250;
     timerID=setInterval(delay,speed);
 }
 function speedChange(){
