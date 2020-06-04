@@ -1,5 +1,5 @@
 
-$(function() {
+(function(){
     "use strict"
     $("#puzzlearea div").each(function (i, e) {
         let x = ((i % 4) * 100);
@@ -56,5 +56,4 @@ $(function() {
             return true;
         }
     }
-});
-
+})();
