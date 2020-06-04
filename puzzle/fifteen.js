@@ -8,8 +8,6 @@ $(function() {
         e.setAttribute("id", "square_" + ((i % 4)) + "_" + Math.floor(i / 4));
         
         $(e).css({ "left": x + "px", "top": y + "px", "backgroundImage": 'url("background.jpg")', "backgroundPosition": -x + 'px ' + (-y) + 'px' });
-       // console.log(parseInt($(e).css("left")) / 100);
-        //console.log(parseInt($(e).css("top")) / 100);
     });
     let x_empty = 3;
     let y_empty = 3;
@@ -53,7 +51,6 @@ $(function() {
         }  
     }
     function getObject(x1, y1) {
-        //console.log("square_" + x1 + "_" + y1);
         return "square_" + x1 + "_" + y1;
     }
     function checkM(x2, y2) {
