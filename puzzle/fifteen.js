@@ -6,7 +6,6 @@ $(function() {
         let y = (Math.floor(i / 4) * 100);
         $(e).addClass("puzzlepiece");
         e.setAttribute("id", "square_" + ((i % 4)) + "_" + Math.floor(i / 4));
-        
         $(e).css({ "left": x + "px", "top": y + "px", "backgroundImage": 'url("background.jpg")', "backgroundPosition": -x + 'px ' + (-y) + 'px' });
     });
     let x_empty = 3;
@@ -16,7 +15,6 @@ $(function() {
     $("#puzzlearea div").click(checkMovablity);
     $("#puzzlearea div").hover(highlight);
     $("#shufflebutton").click(shuffle);
-
     function checkMovablity() {
         x_Temp = parseInt($(this).css("left")) / 100;
         y_Temp = parseInt($(this).css("top")) / 100;
