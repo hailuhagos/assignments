@@ -1,0 +1,16 @@
+This program tells you how many days
+it will be until your next birthday.
+
+Please enter today's date:
+What is the month (1-12)? 7
+What is the day   (1-31)? 24
+7/24 is day #205 of 365.
+
+Please enter your birthday:
+What is the month (1-12)? 11
+What is the day   (1-30)? 23
+11/23 is day #327 of 365.
+
+Your next birthday is in 122 days.
+
+<< your birthday fact >>
