@@ -1,20 +1,24 @@
-
-$(function() {
-    "use strict"
-    $("#puzzlearea div").each(function (i, e) {
+"use strict";
+$(function() {    
+	$("#puzzlearea div").click(checkMovablity);
+    $("#puzzlearea div").hover(highlight);
+    $("#shufflebutton").click(shuffle);	
+	
+    let x_empty = 3;
+    let y_empty = 3;
+    let x_Temp;
+    let y_Temp;
+	init();
+	
+	function init(){
+		$("#puzzlearea div").each(function (i, e) {
         let x = ((i % 4) * 100);
         let y = (Math.floor(i / 4) * 100);
         $(e).addClass("puzzlepiece");
         e.setAttribute("id", "square_" + ((i % 4)) + "_" + Math.floor(i / 4));
         $(e).css({ "left": x + "px", "top": y + "px", "backgroundImage": 'url("background.jpg")', "backgroundPosition": -x + 'px ' + (-y) + 'px' });
     });
-    let x_empty = 3;
-    let y_empty = 3;
-    let x_Temp;
-    let y_Temp;
-    $("#puzzlearea div").click(checkMovablity);
-    $("#puzzlearea div").hover(highlight);
-    $("#shufflebutton").click(shuffle);
+	}
     function checkMovablity() {
         x_Temp = parseInt($(this).css("left")) / 100;
         y_Temp = parseInt($(this).css("top")) / 100;
@@ -22,8 +26,21 @@ $(function() {
             $(this).css({ "left": x_empty * 100 + "px", "top": y_empty * 100 + "px" });
             x_empty = x_Temp;
             y_empty = y_Temp;
+			var win = checkWin();
         }
     }
+	function checkWin(){
+		$("#puzzlearea div").each(function (i, e) {
+			let x = i % 4;
+            let y = Math.floor(i / 4);
+            //console.log("square_" + (i % 4) + "_" + Math.floor(i / 4));
+			if($(e).attr('id') ==="square_" + x + "_" + y){
+                console.log(false);
+				return false;
+			}
+        });
+        //console.log("You WOn");
+	}
     function highlight() {
         x_Temp = parseInt($(this).css("left")) / 100;
         y_Temp = parseInt($(this).css("top")) / 100;
